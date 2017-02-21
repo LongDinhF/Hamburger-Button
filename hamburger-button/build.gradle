@@ -2,11 +2,11 @@ apply plugin: 'com.android.library'
 
 ext {
     bintrayRepo = 'conma-studio'
-    bintrayName = 'hamburgerbutton'   // Has to be same as your library module name
+    bintrayName = 'hamburger-button'   // Has to be same as your library module name
 
     publishedGroupId = 'conma.studio'
     libraryName = 'HamburgerButton'
-    artifact = 'hamburgerbutton'     // Has to be same as your library module name
+    artifact = 'hamburger-button'     // Has to be same as your library module name
 
     libraryDescription = 'A library about Android hamburger button'
 
@@ -15,7 +15,7 @@ ext {
     gitUrl = 'https://github.com/LongDinhF/Hamburger-Button.git'
     githubRepository= 'LongDinhF/Hamburger-Button'
 
-    libraryVersion = '1.0'
+    libraryVersion = '1.1'
 
     developerId = 'LongDinhF'
     developerName = 'Long Dinh'
@@ -33,8 +33,8 @@ android {
     defaultConfig {
         minSdkVersion 16
         targetSdkVersion 25
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.1"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
