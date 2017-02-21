@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HBButton">
+        <!-- The thickness of border. Default value is 10, cannot be negative. -->
+        <attr name="border_thickness" format="integer"/>
+        <!-- The color of border. -->
+        <attr name="border_color" format="color|reference"/>
+        <!-- The radius of border corner. Default value is 10, cannot be negative. -->
+        <attr name="border_corners_radius" format="integer"/>
+        <!-- The color of background. -->
+        <attr name="background_color" format="color|reference"/>
+        <!-- The thickness of line. Default value is 8, cannot be negative. -->
+        <attr name="line_thickness" format="integer"/>
+        <!-- The color of border. -->
+        <attr name="line_color" format="color|reference"/>
+        <!-- The radius of line corner. Default value is 15, cannot be negative. -->
+        <attr name="line_corners_radius" format="integer"/>
+        <!-- The padding of line. Default value is 10, max is 15, cannot be negative. -->
+        <attr name="line_width_padding" format="integer"/>
+        <!-- When it is true shadow slider will slide from left to right. False is otherwise. -->
+        <attr name="slide_left_to_right" format="boolean"/>
+        <!-- Animation when view is perform click. Time is milliseconds. -->
+        <attr name="animation_duration" format="integer"/>
+    </declare-styleable>
+</resources>

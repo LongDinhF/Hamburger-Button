@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:hbbutton="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        tools:context="conma.studio.hamburgerbuttonwrap.MainActivity">
+
+    <conma.studio.hamburgerbutton.HBButton
+            android:id="@+id/hb_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            hbbutton:border_thickness="0"
+            hbbutton:border_corners_radius="15"
+            hbbutton:background_color="#f8888b"
+            hbbutton:line_color="#314fff"/>
+
+    <conma.studio.hamburgerbutton.HBButton
+            android:id="@+id/hb_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            hbbutton:border_thickness="0"
+            hbbutton:border_corners_radius="50"
+            hbbutton:background_color="#6aacff"
+            hbbutton:line_color="@android:color/white"
+            hbbutton:line_corners_radius="0"
+            hbbutton:slide_left_to_right="false"/>
+
+    <conma.studio.hamburgerbutton.HBButton
+            android:id="@+id/hb_button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            hbbutton:border_thickness="0"
+            hbbutton:border_corners_radius="0"
+            hbbutton:background_color="#fac081"
+            hbbutton:line_color="@android:color/white"/>
+
+    <conma.studio.hamburgerbutton.HBButton
+            android:id="@+id/hb_button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            hbbutton:border_thickness="0"
+            hbbutton:border_corners_radius="20"
+            hbbutton:background_color="#881282"
+            hbbutton:line_color="@android:color/white"
+            hbbutton:line_thickness="10"
+            hbbutton:slide_left_to_right="false"/>
+
+    <conma.studio.hamburgerbutton.HBButton
+            android:id="@+id/hb_button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            hbbutton:border_thickness="10"
+            hbbutton:border_color="#f77e02"
+            hbbutton:border_corners_radius="60"
+            hbbutton:background_color="@android:color/white"
+            hbbutton:line_color="#314fff"
+            hbbutton:line_thickness="10"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+        <conma.studio.hamburgerbutton.HBButton
+                android:id="@+id/hb_button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                hbbutton:border_thickness="0"
+                hbbutton:border_corners_radius="20"
+                hbbutton:background_color="#6aacff"
+                hbbutton:line_color="@android:color/white"
+                hbbutton:line_corners_radius="0"/>
+
+        <Button
+                android:id="@+id/bt_change_direction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Change direction"/>
+
+    </LinearLayout>
+
+</LinearLayout>
