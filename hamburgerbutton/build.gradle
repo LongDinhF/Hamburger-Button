@@ -1,5 +1,31 @@
 apply plugin: 'com.android.library'
 
+ext {
+    bintrayRepo = 'conma-studio'
+    bintrayName = 'hamburgerbutton'   // Has to be same as your library module name
+
+    publishedGroupId = 'conma.studio'
+    libraryName = 'HamburgerButton'
+    artifact = 'hamburgerbutton'     // Has to be same as your library module name
+
+    libraryDescription = 'A library about Android hamburger button'
+
+    // Your github repo link
+    siteUrl = 'https://github.com/LongDinhF/Hamburger-Button'
+    gitUrl = 'https://github.com/LongDinhF/Hamburger-Button.git'
+    githubRepository= 'LongDinhF/Hamburger-Button'
+
+    libraryVersion = '1.0'
+
+    developerId = 'LongDinhF'
+    developerName = 'Long Dinh'
+    developerEmail = 'mr.ribbon@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
@@ -29,3 +55,6 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.1.1'
     testCompile 'junit:junit:4.12'
 }
+
+apply from: 'https://raw.githubusercontent.com/nisrulz/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nisrulz/JCenter/master/bintrayv1.gradle'
