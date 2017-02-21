@@ -167,7 +167,9 @@ public class HBButton extends ImageButton {
 		ANIMATED
 	}
 
-	private static final int MIN_SIZE = 100;
+	private final float DPTOPX_SCALE = getResources().getDisplayMetrics().density;
+
+	private static final int MIN_SIZE = 50;
 	private static int BORDER_THICKNESS = 10;
 	private static int BORDER_COLOR = Color.BLACK;
 	private static int BORDER_CORNERS_RADIUS = 10;
@@ -355,14 +357,14 @@ public class HBButton extends ImageButton {
 		if (widthMode == MeasureSpec.EXACTLY)
 			mWidth = widthSize;
 		else if (widthMode == MeasureSpec.AT_MOST)
-			mWidth = Math.min(MIN_SIZE, widthSize);
+			mWidth = (int) Math.min(MIN_SIZE * DPTOPX_SCALE, widthSize);
 		else
 			mWidth = widthSize;
 
 		if (heightMode == MeasureSpec.EXACTLY)
 			mHeight = heightSize;
 		else if (heightMode == MeasureSpec.AT_MOST)
-			mHeight = Math.min(MIN_SIZE, heightSize);
+			mHeight = (int) Math.min(MIN_SIZE * DPTOPX_SCALE, heightSize);
 		else
 			mHeight = heightSize;
 

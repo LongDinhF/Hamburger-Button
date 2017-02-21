@@ -1,1 +1,1 @@
-include ':sample', ':hamburgerbutton'
+include ':sample', ':hamburger-button'
