@@ -5,6 +5,13 @@ A hamburger button with full customization. Inspired by [VinhLe's idea on the Dr
 ![Preview]
 (http://i.imgur.com/5paqZ3d.gif)
 
+# Installation
+From jCenter
+```
+compile 'conma.studio:hamburger-button:1.1'
+
+```
+
 # How to use it
 You can config the looks of the button through XML layout
 
