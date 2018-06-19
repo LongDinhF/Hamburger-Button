@@ -2,8 +2,7 @@
 
 A hamburger button with full customization. Inspired by [VinhLe's idea on the Dribble](https://dribbble.com/shots/1626236-Dribbble-Menu)
 
-![Preview]
-(http://i.imgur.com/5paqZ3d.gif)
+<img src="http://i.imgur.com/5paqZ3d.gif" width="250" />
 
 # Installation
 From jCenter
